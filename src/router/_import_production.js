@@ -1,1 +1,1 @@
-module.exports = file => () => import('@/page/' + file + '.jsx')
+module.exports = file => () => import('@/view/' + file + '.jsx')
