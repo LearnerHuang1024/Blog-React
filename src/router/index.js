@@ -1,10 +1,15 @@
 const _import = require("./_import_" + process.env.NODE_ENV);
 
 const routeConfig = [
+  // {
+  //   path: "/ReactRudexDemo",
+  //   component: _import("web/ReactRudexDemo/index"),
+  //   indexRoute: { component: _import("web/ReactRudexDemo/index") }
+  // },
   {
-    path: "/ReactRudexDemo",
-    component: _import("web/ReactRudexDemo/index"),
-    indexRoute: { component: _import("web/ReactRudexDemo/index") }
+    path: "/AntLayoutDemo",
+    component: _import("web/AntLayoutDemo/index"),
+    indexRoute: { component: _import("web/AntLayoutDemo/index") }
   },
   {
     path: "/Comment",

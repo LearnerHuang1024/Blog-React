@@ -5,13 +5,16 @@ import { renderRoutes } from 'react-router-config'
 import { BrowserRouter } from "react-router-dom";
 import routeConfig from '@/router'
 import * as serviceWorker from '@/utils/serviceWorker';
+import Layout from '@/components/layout'
+require('@/assets/fonts/iconfont.css');
 const App = () => (
-    <BrowserRouter>
-      {renderRoutes(routeConfig)}
-    </BrowserRouter>
+  <Layout content={ <BrowserRouter>
+    {renderRoutes(routeConfig)}
+  </BrowserRouter>}/>
+   
 )
 ReactDOM.render(
-  <App />
+  <App/>
   , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

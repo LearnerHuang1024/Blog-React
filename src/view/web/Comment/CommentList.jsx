@@ -1,6 +1,10 @@
 import React from "react";
+import propTypes from "prop-types";
 import CommentItem from "./CommentItem";
 export default class CommentList extends React.Component {
+  static propTypes = {
+    comments: propTypes.array.isRequired
+  }
   // constructor(props){
   //   super(props)
   // }
